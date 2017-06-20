@@ -54,7 +54,7 @@ const config = {
 		chunkFilename: 'js/[name].js?[chunkhash:8]',
 		path: path.resolve(ROOT, 'dist'),
 		publicPath: '/'
-	},   
+	},
 	module: {
 		rules: [
 			{
@@ -76,10 +76,10 @@ const config = {
 							options: {
 								minimize:  !IsDev
 							}
-						}, 
+						},
 						{
 							loader: 'less-loader?id=styles'
-						}, 
+						},
 						{
 							loader: 'postcss-loader?id=styles',
 							options: {
@@ -175,7 +175,7 @@ function getEntryHtml (globPath) {
 				removeComments: true,
 				collapseWhitespace: true,
 				minifyCSS: true,
-				minifyJS: true	
+				minifyJS: true
 			};
 
 		entries.push({

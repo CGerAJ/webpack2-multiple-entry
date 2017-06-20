@@ -3,21 +3,81 @@
 	<meta name="description" content="">
 </head>
     <body>
-        
+			<div id="app">
+  			#include('../template/header.html')
 
-        <h1>Home</h1>
-        <h2>page</h2>
+				<div id="layout-ceiling-slide">
+			    <div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide">
+			                <picture>
+			                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+			                    <source srcset="../img/pc_banner1_1366x768.jpg" media="(max-width:1366px) and (min-width:1024px)">
+			                    <source srcset="../img/pc_banner1_1440x900.jpg" media="(max-width:1440px) and (min-width:1366px) ">
+			                    <source srcset="../img/pc_banner1_1920x1080.jpg" media="(max-width:1920px) and (min-width:1440px) ">
+			                    <!--[if IE 9]></video><![endif]-->
+			                    <img srcset="../img/pc_banner1_1366x768.jpg" style="width: 100%" alt="slide">
+			                </picture>
+			            </div>
+			            <div class="swiper-slide">
+			                <picture>
+			                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+			                    <source srcset="../img/pc_banner2_1366x768.jpg" media="(max-width:1366px) and (min-width:1024px)">
+			                    <source srcset="../img/pc_banner2_1440x900.jpg" media="(max-width:1440px) and (min-width:1366px) ">
+			                    <source srcset="../img/pc_banner2_1920x1080.jpg" media="(max-width:1920px) and (min-width:1440px) ">
+			                    <!--[if IE 9]></video><![endif]-->
+			                    <img srcset="../img/pc_banner2_1366x768.jpg" style="width: 100%"  alt="slide">
+			                </picture>
+			            </div>
+			            <div class="swiper-slide">
+			                <picture>
+			                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+			                    <source srcset="../img/pc_banner3_1366x768.jpg" media="(max-width:1366px) and (min-width:1024px)">
+			                    <source srcset="../img/pc_banner3_1440x900.jpg" media="(max-width:1440px) and (min-width:1366px) ">
+			                    <source srcset="../img/pc_banner3_1920x1080.jpg" media="(max-width:1920px) and (min-width:1440px) ">
+			                    <!--[if IE 9]></video><![endif]-->
+			                    <img srcset="../img/pc_banner3_1366x768.jpg" style="width: 100%"  alt="slide">
+			                </picture>
+			            </div>
+			            <div class="swiper-slide">
+			                <picture>
+			                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+			                    <source srcset="../img/pc_banner4_1366x768.jpg" media="(max-width:1366px) and (min-width:1024px)">
+			                    <source srcset="../img/pc_banner4_1440x900.jpg" media="(max-width:1440px) and (min-width:1366px) ">
+			                    <source srcset="../img/pc_banner4_1920x1080.jpg" media="(max-width:1920px) and (min-width:1440px) ">
+			                    <!--[if IE 9]></video><![endif]-->
+			                    <img srcset="../img/pc_banner4_1366x768.jpg" style="width: 100%"  alt="slide">
+			                </picture>
+			            </div>
+			        </div>
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination swiper-pagination-index" style=""></div>
 
-        #include('../template/nav.html')
+			        <div class="swiper-button-next"></div>
+			        <div class="swiper-button-prev"></div>
+			    </div>
+			</div>
 
-        <p>
-            <img src="../img/logo-yahoo.png" alt="yahoo">
-        </p>
-	   
-       <i class="iconfont icon-weixin"></i>
-        
+
+
+
+
 		#include('../template/script.html')
+
+
+				{{ message }}
+
+				<Row>
+					 <i-col span="12">
+							 <Date-picker type="date" placeholder="选择日期" style="width: 200px"></Date-picker>
+					 </i-col>
+					 <i-col span="12">
+							 <Date-picker type="daterange" placement="bottom-end" placeholder="选择日期" style="width: 200px"></Date-picker>
+					 </i-col>
+				</Row>
+
+
+		</div>
     </body>
     #include('../template/statistics.html')
 </html>
-	

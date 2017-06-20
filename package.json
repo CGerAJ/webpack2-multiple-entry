@@ -42,5 +42,9 @@
     "url-loader": "^0.5.9",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "iview": "^2.0.0-rc.17",
+    "vue": "^2.3.4"
   }
 }

@@ -1,10 +1,12 @@
 # Webpack2 multiple entry
-
+(https://github.com/givebest)
+原项目克隆地址
 基于 webpack2 实现的多入口项目脚手架。
 
 主要使用 `extract-text-webpack-plugin` 实现 `js` 、`css` 公共代码提取，`html-webpack-plugin` 实现 `html` 多入口，`less-loader` 实现 `less` 编译，`postcss-loader` 配置 `autoprefixer` 实现自动添加浏览器兼容前缀，`html-withimg-loader` 实现 `html` 内引入图片版本号添加和模板功能，`babel-loader` 实现 `ES6` 转码功能， `happypack` 多线程加速构建速度。
 
 ## 使用
+
 
 ### 安装
 
@@ -44,7 +46,7 @@ npm start
 │   ├   ├    ├── index.js    # 匹配 view/user/index.html
 │   ├   ├    ├── list.js     # 匹配 view/user/list.html
 │   ├   └── lib              # JS 库等，不参与路由匹配
-│   ├       ├── jquery.js 
+│   ├       ├── jquery.js
 │   └── view                 
 │   ├    └── index.html       # 对应 js/index.js
 │   ├    └── user         
@@ -65,8 +67,4 @@ npm start
 ```
 
 ## License
-
-[ISC](./LICENSE) © 2017 [givebest](https://github.com/givebest)
-
-
-
+ISC © 2017 givebest (https://github.com/givebest)

@@ -3,10 +3,21 @@
 原项目克隆地址
 基于 webpack2 实现的多入口项目脚手架。
 
-主要使用 `extract-text-webpack-plugin` 实现 `js` 、`css` 公共代码提取，`html-webpack-plugin` 实现 `html` 多入口，`less-loader` 实现 `less` 编译，`postcss-loader` 配置 `autoprefixer` 实现自动添加浏览器兼容前缀，`html-withimg-loader` 实现 `html` 内引入图片版本号添加和模板功能，`babel-loader` 实现 `ES6` 转码功能， `happypack` 多线程加速构建速度。
+原项目主要使用 `extract-text-webpack-plugin` 实现 `js` 、`css` 公共代码提取，`html-webpack-plugin` 实现 `html` 多入口，`less-loader` 实现 `less` 编译，`postcss-loader` 配置 `autoprefixer` 实现自动添加浏览器兼容前缀，`html-withimg-loader` 实现 `html` 内引入图片版本号添加和模板功能，`babel-loader` 实现 `ES6` 转码功能， `happypack` 多线程加速构建速度。
 
-## 使用
+## 新增库
+| 库名 | 说明 |
+|----------|------|
+| `vue` | 非组件化开发 |
+| `iview` | 可复用iview50多套组件 |
+| `axios` | 替代ajax |
 
+## 未解决的问题
+公共第三方库未打包成一个文件
+
+##可优化方向
+公共第三方库未打包成一个文件
+修改pageage.json文件 增加vue和iview和axios 改变文件导入方式
 
 ### 安装
 
